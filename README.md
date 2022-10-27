@@ -75,7 +75,7 @@ Spotify :
 ```
 
 Discord
-- ip dst : 20.199.120.182
+- ip dst :  162.159.130.234
 - port dst : 443
 - port src : 49187
 
@@ -83,7 +83,7 @@ Discord
 
 ```
 [Discord.exe]
- TCP    192.168.1.16:60261     20.199.120.182:443     ESTABLISHED     
+ TCP    192.168.1.16:60261     162.159.130.234:443     ESTABLISHED     
 ```
 
 Riot client 
