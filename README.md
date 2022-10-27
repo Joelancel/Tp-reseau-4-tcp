@@ -54,7 +54,7 @@ Faites-vous un petit top 5 des applications que vous utilisez sur votre PC souve
 
 🌞 **Déterminez, pour ces 5 applications, si c'est du TCP ou de l'UDP**
 
-Dofus : 
+Dofus (cap dofus.pcapng) : 
 - ip dst :  172.65.252.253 
 - port dst :  5.5.5.5
 - port src : 60506 
@@ -64,7 +64,7 @@ netstat -ano -p tcp -b :
 [Dofus.exe]
   TCP    10.33.17.65:60459      172.65.252.253:5555    ESTABLISHED     11868
 ```
-Spotify : 
+Spotify (cap spotify.pcapng) : 
 - ip dst : 35.186.224.47
 - port dst : 443
 -  port src : 53176
@@ -74,7 +74,7 @@ Spotify :
   TCP    192.168.1.16:53112     35.186.224.47:443
 ```
 
-Discord
+Discord (cap discord.pcapng) :
 - ip dst :  162.159.130.234
 - port dst : 443
 - port src : 49187
@@ -86,7 +86,7 @@ Discord
  TCP    192.168.1.16:60261     162.159.130.234:443     ESTABLISHED     
 ```
 
-Riot client 
+Riot client (cap riot.pcapng)
 - ip dst : 104.18.156.37
 - port dst : 443
 - port src : 4088
@@ -118,8 +118,9 @@ Riot client
 Connectez-vous en SSH à votre VM.
 
 🌞 **Examinez le trafic dans Wireshark**
-
-
+-  *3-Way Handshake* ( cap3way.pcapng ) 
+-  **repérez du trafic SSH** (ssh.pcapng)
+- **repérez le FIN FINACK à la fin d'une connexion** (fin de trafic.pcapng)
 🌞 **Demandez aux OS**
 
 netstats : 
