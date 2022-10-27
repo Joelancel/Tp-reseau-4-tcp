@@ -96,23 +96,12 @@ Riot client
   TCP    192.168.1.16:55535     104.18.156.37:443      ESTABLISHED     4088
 ```
 🌞 **Demandez l'avis à votre OS**
-
-- votre OS est responsable de l'ouverture des ports, et de placer un programme en "écoute" sur un port
-- il est aussi responsable de l'ouverture d'un port quand une application demande à se connecter à distance vers un serveur
-- bref il voit tout quoi
-- utilisez la commande adaptée à votre OS pour repérer, dans la liste de toutes les connexions réseau établies, la connexion que vous voyez dans Wireshark, pour chacune des 5 applications
-
-**Il faudra ajouter des options adaptées aux commandes pour y voir clair. Pour rappel, vous cherchez des connexions TCP ou UDP.**
-
+- Netstat :
+   Proto  Adresse locale         Adresse distante       État
+  TCP    127.0.0.1:61810        LAPTOP-DS0S1GKI:9010   SYN_SENT
+  TCP    192.168.1.16:52509     lan:domain             ESTABLISHED
+  TCP    192.168.1.16:55064     lan:domain             ESTABLISHED
+  TCP    192.168.1.16:55651     cdn-185-199-108-154:https  ESTABLISHED
+  TCP    192.168.1.16:55658     cdn-185-199-108-154:https  ESTABLISHED
+  TCP    192.168.1.16:55841     lb-140-82-121-6-fra:https  ESTABLISHED
 ```
-# MacOS
-$ netstat
-
-# GNU/Linux
-$ ss
-
-# Windows
-$ netstat
-```
-
-🦈🦈🦈🦈🦈 **Bah ouais, captures Wireshark à l'appui évidemment.** Une capture pour chaque application, qui met bien en évidence le trafic en question.
