@@ -65,7 +65,7 @@ netstat -ano -p tcp -b :
   TCP    10.33.17.65:60459      172.65.252.253:5555    ESTABLISHED     11868
 ```
 Spotify : 
-- ip dst : 192.168.1.16
+- ip dst : 35.186.224.47
 - port dst : 443
 -  port src : 53176
 
