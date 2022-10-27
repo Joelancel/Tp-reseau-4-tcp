@@ -106,3 +106,24 @@ Riot client
   TCP    192.168.1.16:55658     cdn-185-199-108-154:https  ESTABLISHED
   TCP    192.168.1.16:55841     lb-140-82-121-6-fra:https  ESTABLISHED
 ```
+# II. Mise en place
+
+## 1. SSH
+
+🖥️ **Machine `node1.tp4.b1`**
+
+- n'oubliez pas de dérouler la checklist (voir [les prérequis du TP](#0-prérequis))
+- donnez lui l'adresse IP `10.4.1.11/24`
+
+Connectez-vous en SSH à votre VM.
+
+🌞 **Examinez le trafic dans Wireshark**
+
+
+🌞 **Demandez aux OS**
+
+netstats : 
+  ```
+Proto  Adresse locale         Adresse distante       État
+  TCP    10.4.1.254:61193       10.4.1.11:ssh          ESTABLISHED
+```
