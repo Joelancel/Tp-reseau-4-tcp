@@ -97,7 +97,8 @@ Riot client
 ```
 🌞 **Demandez l'avis à votre OS**
 - Netstat :
-   Proto  Adresse locale         Adresse distante       État
+```
+  Proto  Adresse locale         Adresse distante       État
   TCP    127.0.0.1:61810        LAPTOP-DS0S1GKI:9010   SYN_SENT
   TCP    192.168.1.16:52509     lan:domain             ESTABLISHED
   TCP    192.168.1.16:55064     lan:domain             ESTABLISHED
